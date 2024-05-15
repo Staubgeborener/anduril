@@ -65,6 +65,10 @@
 #include "anduril/lockout-mode-fsm.h"
 #endif
 
+#ifdef USE_ASTRONOMY_MODE
+#include "anduril/astronomy-mode-fsm.h"
+#endif
+
 // enable FSM features needed by strobe modes
 #include "anduril/strobe-modes-fsm.h"
 
@@ -368,6 +372,12 @@ void loop() {
     else {
         // doze until next clock tick
         idle_mode();
+    }
+    #endif
+
+    #ifdef USE_ASTRONOMY_MODE
+    else if (state == ASTRONOMY_MODE) {
+        astronomy_mode();
     }
     #endif
 
