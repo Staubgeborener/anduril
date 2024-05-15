@@ -325,6 +325,15 @@ uint8_t off_state(Event event, uint16_t arg) {
     }
     #endif  // end 7 clicks
 
+   #ifdef USE_ASTRONOMY_MODE
+    // 8 clicks: astronomy mode
+    else if (event == EV_8clicks) {
+        set_state(ASTRONOMY_MODE, 0);
+        save_config();
+        return EVENT_HANDLED;
+    }
+    #endif
+
     ////////// Every action below here is blocked in the Extended Simple UI //////////
 
     #ifdef USE_SIMPLE_UI
