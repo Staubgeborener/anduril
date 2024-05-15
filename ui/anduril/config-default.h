@@ -215,3 +215,5 @@
 // (but allow disabling this feature per build)
 #define USE_CHANNEL_PER_STROBE
 
+// enable astronomy mode
+#define USE_ASTRONOMY_MODE
