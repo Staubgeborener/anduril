@@ -1,4 +1,4 @@
-#include "planetary-mode.h"
+#include "astronomy-mode.h"
 
 void astronomy_mode() {
     uint8_t red_mode = (2 << 4) | 1;
