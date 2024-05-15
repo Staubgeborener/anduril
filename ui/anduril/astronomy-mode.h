@@ -1,5 +1,5 @@
-#ifndef ASTRONOMY_MODE_H
-#define ASTRONOMY_MODE_H
+#ifndef ASTRONOMY_MODE
+#define ASTRONOMY_MODE
 
 void astronomy_mode();
 
