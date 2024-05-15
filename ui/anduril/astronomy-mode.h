@@ -1,6 +1,6 @@
-#include "astronomy-mode.h"
+#ifndef ASTRONOMY_MODE_H
+#define ASTRONOMY_MODE_H
 
-void astronomy_mode() {
-    uint8_t red_mode = (2 << 4) | 1;
-    rgb_led_update(red_mode, 0);
-}
+void astronomy_mode();
+
+#endif
